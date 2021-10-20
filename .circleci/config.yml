@@ -2,6 +2,7 @@ version: 2
 
 jobs:
   plan-apply:
+    context: aws-test
     working_directory: /tmp/project
     docker:
       - image: docker.mirror.hashicorp.services/hashicorp/terraform:light
